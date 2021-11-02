@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     display: flex;
     justify-content: space-between;
@@ -105,10 +105,10 @@
 }
 
 .bubble-xl {
-    left: 2.8em;
+    left: 2.6em;
     bottom: 0;
-    height: 10em;
-    width: 10em;
+    height: 9.5em;
+    width: 9.5em;
     margin-bottom: -1.8rem;
     background-image: url(../images/x-large.svg);
 }

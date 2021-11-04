@@ -1,0 +1,117 @@
+.footer {
+    height: 11.5em;
+    display: flex;
+    justify-content: space-between;
+    background: #245E74;
+    padding: 3rem clamp(2rem, 7vw, 6rem);
+}
+
+h3 {
+    color: white;
+    font-size: 1.2em;
+}
+
+span {
+    font-size: .73em;
+    color: white;
+}
+
+.footer > * + * {
+    margin-left: 2rem;
+}
+
+.mg-t {
+    margin-top: 1rem;
+}
+
+/* Address */
+.address,
+.sitemap,
+.about-us,
+.get-in-touch {
+    width: max-content;
+    max-width: 13em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sitemap */
+.sitemap-info {
+    display: flex;
+}
+
+.sitemap-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sitemap-info span + span {
+    margin-top: .4rem;
+}
+
+.sitemap-info div + div {
+    margin-left: 1.2rem;   
+}
+
+/* Copyright */
+.copyright {
+    color: white;
+    font-size: .8em;
+    align-self: center;
+}
+
+/* About us */
+.about-us div {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us span + span {
+    margin-top: .4rem;
+}
+
+/* Get in touch */
+.bg-imgs {
+    display: flex;
+}
+
+.bg-imgs * + * {
+    margin-left: 1rem;
+}
+
+.bg-img {
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../../images/Icon\ awesome-facebook.svg);
+}
+
+.instagram {
+    background-image: url(../../images//Icon\ awesome-instagram.svg);
+}
+
+.twitter {
+    background-image: url(../../images/Icon\ awesome-twitter.svg);
+}
+
+.youtube {
+    background-image: url(../../images/Icon\ awesome-youtube.svg);
+}
+
+.linkedin {
+    background-image: url(../../images/Icon\ awesome-linkedin.svg);
+}
+
+/* Hover & focus state */
+.hover *:hover,
+.bg-img:hover,
+.hover *:focus,
+.bg-img:focus {
+    cursor: pointer;
+    opacity: .7;
+}

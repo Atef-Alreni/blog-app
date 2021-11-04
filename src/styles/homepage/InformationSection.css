@@ -14,6 +14,9 @@
 .global,
 .valuable {
     width: clamp(15em, 20vw, 20em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .information-section-container p {
@@ -21,24 +24,27 @@
 }
 
 .free div {
-    height: clamp(2em, 5vw, 4em);
-    background-image: url(../images/Icon\ awesome-wallet.svg);
+    width: clamp(2em, 5vw, 3.3em);
+    height: clamp(2em, 5vw, 3.3em);
+    background-image: url(../../images/Icon\ awesome-wallet.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
 .global div {
-    height: clamp(2em, 5vw, 4em);
-    background-image: url(../images/Icon\ metro-earth.svg);
+    width: clamp(2em, 5vw, 3.3em);
+    height: clamp(2em, 5vw, 3.3em);
+    background-image: url(../../images/Icon\ metro-earth.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
 .valuable div {
-    height: clamp(1.5em, 5vw, 4em);
-    background-image: url(../images/Icon\ awesome-gem.svg);
+    width: clamp(2em, 5vw, 3.3em);
+    height: clamp(2em, 5vw, 3.3em);
+    background-image: url(../../images/Icon\ awesome-gem.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;

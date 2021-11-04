@@ -1,4 +1,4 @@
-import '../styles/InformationSection.css';
+import '../../styles/homepage/InformationSection.css';
 
 function InformationSection() {
     return (

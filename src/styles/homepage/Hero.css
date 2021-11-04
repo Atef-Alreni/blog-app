@@ -66,7 +66,7 @@
 .rocket-illustration {
     height: 36em;
     width: 36em;
-    background-image: url(../images/rocket-illustration.svg);
+    background-image: url(../../images/rocket-illustration.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -76,6 +76,7 @@
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: -1;
 }
 
 .bubble-s {
@@ -83,7 +84,7 @@
     top: 3em;
     height: 5em;
     width: 5em;
-    background-image: url(../images/small.svg);
+    background-image: url(../../images/small.svg);
 }
 
 .bubble-m {
@@ -92,7 +93,7 @@
     height: 7em;
     width: 7em;
     margin-bottom: -1.1rem;
-    background-image: url(../images/medium.svg);
+    background-image: url(../../images/medium.svg);
 }
 
 .bubble-l {
@@ -101,7 +102,7 @@
     height: 9em;
     width: 9em;
     margin-bottom: -1.1rem;
-    background-image: url(../images/large.svg);
+    background-image: url(../../images/large.svg);
 }
 
 .bubble-xl {
@@ -110,5 +111,5 @@
     height: 9.5em;
     width: 9.5em;
     margin-bottom: -1.8rem;
-    background-image: url(../images/x-large.svg);
+    background-image: url(../../images/x-large.svg);
 }

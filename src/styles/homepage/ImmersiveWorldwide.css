@@ -1,0 +1,97 @@
+.immersive-worldwide-container {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fafafa;
+    margin-top: 7rem;
+}
+
+/* Info */
+.info-img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-start {
+    align-self: flex-start;
+}
+
+.info {
+    width: clamp(25em, 40vw, 35em);
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10rem;
+    margin-top: 1.2rem;
+}
+
+.mg-left {
+    margin-left: 10rem;
+}
+
+.info > * + * {
+    margin-top: 3.3rem;
+}
+
+.info h1 {
+    width: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.info h1::after {
+    content: '';
+    width: 3em;
+    height: .2em;
+    background: #245E74;
+    border-radius: 20px;
+    margin-top: .6rem;
+}
+
+/* Buttons */
+
+.info a {
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    background: #116ABE;
+    padding: .8rem 2.5rem;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+
+.green {
+    background: #0AA62D !important;
+}
+
+/* Hover & focus state */
+.info a:hover,
+.info a:focus {
+    color: black;
+    border: 1px solid black;
+    background: white !important;
+}
+
+/* Imgs */
+.girl-img,
+.worldwide-img {
+    width: 40em;
+    height: 40em; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.girl-img {   
+    background-image: url(../../images/Girl.png);
+    margin-left: 2rem;
+}
+
+.worldwide-img {
+    background-image: url(../../images/Planet.png);
+    margin-right: 2rem;
+}

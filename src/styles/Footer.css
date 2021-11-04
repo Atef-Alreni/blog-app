@@ -1,9 +1,9 @@
 .footer {
-    height: 11.5em;
+    height: 10em;
     display: flex;
     justify-content: space-between;
     background: #245E74;
-    padding: 3rem clamp(2rem, 7vw, 6rem);
+    padding: 1.6rem clamp(2rem, 7vw, 6rem);
 }
 
 h3 {
@@ -12,7 +12,7 @@ h3 {
 }
 
 span {
-    font-size: .73em;
+    font-size: .7em;
     color: white;
 }
 
@@ -56,7 +56,7 @@ span {
 /* Copyright */
 .copyright {
     color: white;
-    font-size: .8em;
+    font-size: .7em;
     align-self: center;
 }
 
@@ -88,23 +88,23 @@ span {
 }
 
 .facebook {
-    background-image: url(../../images/Icon\ awesome-facebook.svg);
+    background-image: url(../images/Icon\ awesome-facebook.svg);
 }
 
 .instagram {
-    background-image: url(../../images//Icon\ awesome-instagram.svg);
+    background-image: url(../images//Icon\ awesome-instagram.svg);
 }
 
 .twitter {
-    background-image: url(../../images/Icon\ awesome-twitter.svg);
+    background-image: url(../images/Icon\ awesome-twitter.svg);
 }
 
 .youtube {
-    background-image: url(../../images/Icon\ awesome-youtube.svg);
+    background-image: url(../images/Icon\ awesome-youtube.svg);
 }
 
 .linkedin {
-    background-image: url(../../images/Icon\ awesome-linkedin.svg);
+    background-image: url(../images/Icon\ awesome-linkedin.svg);
 }
 
 /* Hover & focus state */

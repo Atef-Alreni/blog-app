@@ -33,6 +33,7 @@ a {
     color: white;
     font-weight: 600;
     font-size: .8em;
+    transition: all .2s ease-in-out;
 }
 
 .list-items > a + a {
@@ -52,10 +53,16 @@ a {
     width: 1.8em;
     height: 3px;
     background: white;
+    border-radius: 5px;
 }
 
 .half-line {
     width: 1.1em;
 }
 
-
+/* Hover & focus */
+.list-items a:hover,
+.list-items a:focus {
+    opacity: .7;
+    text-decoration: underline;
+}

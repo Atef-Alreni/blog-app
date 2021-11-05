@@ -1,8 +1,12 @@
 .footer {
     height: 10em;
+    background: #245E74;
+}
+
+.contain-width {
+    width: 90vw;
     display: flex;
     justify-content: space-between;
-    background: #245E74;
     padding: 1.6rem clamp(2rem, 7vw, 6rem);
 }
 
@@ -16,7 +20,7 @@ span {
     color: white;
 }
 
-.footer > * + * {
+.contain-width > * + * {
     margin-left: 2rem;
 }
 

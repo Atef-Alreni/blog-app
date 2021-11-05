@@ -1,48 +1,145 @@
 .login-container {
     height: 90vh;
-    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    margin-inline: 5rem;
 }
 
 /* Form */
-form {
+.login-form {
+    position: relative;
     width: 50rem;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background: white;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.308);
     border-radius: 5px;
+    padding: 2rem 3.5rem 0 3rem;
 }
 
-form h1 {
+.form-components {
+    align-self: center;
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
 }
 
-form h1::after {
+.login-form h1 {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h1::after {
     content: '';
-    width: 45rem;
+    width: clamp(25rem, 50vw, 45rem);
     height: 1px;
     border-radius: 5px;
-    background: black;
-    margin-top: .5rem;
-    margin-left: -2rem;
-    opacity: .5;
+    background: rgba(0, 0, 0, 0.404);
+    margin-top: .7rem;
+    margin-left: -1rem;
 }
 
 .username-container,
 .password-container {
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.password-container div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .username,
 .password {
     width: 40rem;
-    height: 3.1rem;
-    border: 1px solid black;
+    height: 3rem;
+    font-size: .9em;
+    border: 1px solid rgba(0, 0, 0, 0.548);
     border-radius: 5px;
-    margin-top: .3rem;
+    margin-top: .6rem;
+    padding-left: .7rem;
+}
+
+.forgot-password {
+    color: grey;
+    font-size: .6em;
+    align-self: flex-end;
+    margin-right: 0.2rem;
+    transition: all .1s ease-in-out;
+}
+
+.login-btn {
+    align-self: flex-end;
+    font-weight: 600;
+    color: white;
+    background: #1D84C7;
+    border: none;
+    border-radius: 10px;
+    padding: .8rem 1.8rem;
+    margin: .8rem .3rem 1.4rem 0;
+}
+
+/* SideNav */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+}
+
+.sidenav a {
+    width: 15rem;
+    color: #777777;
+    background: #F5F5F5;
+    padding: 1rem 1rem;
+    transition: all .4s ease-in-out;
+}
+
+.sidenav a + a {
+    margin-top: .25rem;
+}
+
+.signup-text {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 2.5rem;
+    color: #939393;
+}
+
+.signup-text::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -17px;
+    width: clamp(20rem, 45rem, 45rem);
+    height: 1px;
+    background: rgba(0, 0, 0, 0.199);
+}
+
+.signup-text a {
+    color: #1D84C7;
+    margin-left: 0.3rem;
+}
+
+/* Hover & focus */
+
+.forgot-password:hover,
+.forgot-password:focus {
+    opacity: .7;
+}
+
+.sidenav a:hover,
+.sidenav a:focus {
+    color: black;
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.signup-text a:hover,
+.signup-text a:focus {
+    opacity: .7;
 }

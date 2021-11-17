@@ -1,4 +1,6 @@
-import '../../styles/homepage/Hero.css'
+import '../../styles/homepage/Hero.css';
+import rocket from '../../images/rocket-illustration.svg';
+import { Link } from 'react-router-dom';
 
 function Hero(){
     return (
@@ -7,11 +9,11 @@ function Hero(){
                 <h1>The Most Immersive Blogger App Ever</h1>
                 <p>Blogger, a truly fantastic app which allows you to enjoy posting your knowledge and opinions for friends and family alike to view.</p>
                 <div className="btns">
-                    <a href="#">Sign up for free</a>
-                    <a href="#">Learn more</a>
+                    <Link to="/signup">Sign up for free</Link>
+                    <a href="#learnmore">Learn more</a>
                 </div>
             </div>
-            <div className="rocket-illustration"></div>
+            <img src={ rocket } alt="" className="rocket-illustration"/>
             <div className="absolute bubble-s"></div>
             <div className="absolute bubble-m"></div>
             <div className="absolute bubble-l"></div>

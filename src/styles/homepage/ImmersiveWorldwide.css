@@ -3,42 +3,46 @@
     height: max-content;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-end;
     background: #fafafa;
-    margin-top: 7rem;
-}
-
-/* Info */
-.info-img-container {
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
 }
 
 .flex-start {
     align-self: flex-start;
 }
 
+/* Info */
+.info-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-img-container + .info-img-container {
+    margin-top: 5rem;
+}
+
 .info {
-    width: clamp(25em, 40vw, 35em);
-    height: 25em;
+    width: clamp(30rem, 50vw, 33rem);
+    height: max-content;
+    max-height: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-right: 10rem;
+    margin-inline: auto;
     margin-top: 1.2rem;
 }
 
-.mg-left {
-    margin-left: 10rem;
-}
-
 .info > * + * {
-    margin-top: 3.3rem;
+    margin-top: 2rem;
 }
 
 .info h1 {
-    width: 8em;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -53,19 +57,25 @@
     margin-top: .6rem;
 }
 
+.info p {
+    text-align: center;
+}
+
 /* Buttons */
 
 .info a {
     cursor: pointer;
+    font-weight: 600;
     color: white;
+    border: 1px solid #116ABE;
     border-radius: 30px;
     background: #116ABE;
     padding: .8rem 2.5rem;
-    font-weight: 600;
     transition: all .4s ease-in-out;
 }
 
 .green {
+    border: 1px solid #0AA62D !important;
     background: #0AA62D !important;
 }
 
@@ -73,25 +83,80 @@
 .info a:hover,
 .info a:focus {
     color: black;
-    border: 1px solid black;
+    border: 1px solid black !important;
     background: white !important;
 }
 
 /* Imgs */
 .girl-img,
-.worldwide-img {
-    width: 40em;
-    height: 40em; 
-    background-size: contain;
-    background-repeat: no-repeat;
+.planet-img {
+    width: clamp(20rem, 50vw, 40rem);
+    height: clamp(20rem, 50vw, 30rem);
 }
 
 .girl-img {   
-    background-image: url(../../images/Girl.png);
     margin-left: 2rem;
 }
 
 .worldwide-img {
-    background-image: url(../../images/Planet.png);
     margin-right: 2rem;
+}
+/* Almost Tablet screen */
+@media (max-width: 1200px) {  
+    .info {
+        width: 45%;
+        margin-left: 2rem;
+    }
+
+    .info-img-container + .info-img-container .info {
+        margin-right: 2rem;
+    }
+
+    .info h1 {
+        font-size: 1.9em;
+    }
+
+    .info p {
+        font-size: .9em;
+        margin-top: 1.8rem;
+    }
+
+    .info a {
+        font-size: .9em;
+        margin-top: 1.7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .info-img-container {
+        flex-direction: column;
+    }
+
+    .info {
+        width: 65%;
+        margin: 3rem 0 0 0;
+        order: 2;
+    }  
+
+    .girl-img {
+        order: 1;
+        width: 80%;
+        margin: 0;
+    }
+    
+    .planet-img {
+        width: 80%;
+        margin: 0;
+    } 
+}
+
+/* Phone */
+@media (max-width: 650px) {
+    .info h1 {
+        font-size: 1.6em;   
+    }
+
+    .info p {
+        font-size: .8em;
+    }
 }

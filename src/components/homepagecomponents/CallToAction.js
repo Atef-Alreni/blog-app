@@ -4,12 +4,10 @@ function CallToAction() {
     return (
         <div className="call-to-action-container">
             <h1>Like what you see?</h1>
-            <div>
-                <form action="" method="get" className="redirect-form">
-                    <input type="email" name="" className="email" placeholder="Email"/>
-                    <input type="button" value="Sign up for free" className="redirect-button"/>
-                </form>
-            </div>
+            <form action="" method="get" className="redirect-form">
+                <input type="email" className="call-to-action-email" placeholder="Email"/>
+                <input type="submit" value="Sign up for free" className="redirect-button"/>
+            </form>
         </div>
     )
 }

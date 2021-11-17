@@ -11,25 +11,25 @@
 
 /* Text and Buttons */
 .text-btns {
-    height: 40vh;
+    height: clamp(15rem, 38vh, 18rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.text-btns > * + * {
-    margin-top: 1.5rem;
-}
-
 .text-btns h1 {
-    width: 35vw;
-    font-size: clamp(1.5em, 5vw, 2.8em);
+    width: 30rem;
+    font-size: 2.8em;
 }
 
 .text-btns p {
-    width: 38vw;
+    width: clamp(25rem, 38vw, 35rem);
     font-size: 1.11em;
     margin-top: 1rem;
+}
+
+.btns  {
+    margin-top: 2rem;
 }
 
 .btns a {
@@ -49,6 +49,8 @@
     padding-inline: 1.8rem;
 }
 
+/* Hover & Focus */
+
 .btns a:hover,
 .btns a:focus {
     color: #1D84C7;
@@ -64,12 +66,8 @@
 
 /* Illustration */
 .rocket-illustration {
-    height: 36em;
-    width: 36em;
-    background-image: url(../../images/rocket-illustration.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    width: clamp(20rem, 40vw, 35rem);
+    height: clamp(20rem, 40vw, 35rem);
 }
 
 .absolute {
@@ -82,16 +80,16 @@
 .bubble-s {
     left: 3.7em;
     top: 3em;
-    height: 5em;
     width: 5em;
+    height: 5em;
     background-image: url(../../images/small.svg);
 }
 
 .bubble-m {
     right: 3em;
     bottom: 0;
-    height: 7em;
     width: 7em;
+    height: 7em;
     margin-bottom: -1.1rem;
     background-image: url(../../images/medium.svg);
 }
@@ -99,8 +97,8 @@
 .bubble-l {
     right: 5.7em;
     top: 2em;
-    height: 9em;
     width: 9em;
+    height: 9em;
     margin-bottom: -1.1rem;
     background-image: url(../../images/large.svg);
 }
@@ -108,8 +106,108 @@
 .bubble-xl {
     left: 2.6em;
     bottom: 0;
-    height: 9.5em;
     width: 9.5em;
+    height: 9.5em;
     margin-bottom: -1.8rem;
     background-image: url(../../images/x-large.svg);
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        padding-left: 10vw;
+    }
+
+    .text-btns h1 {
+        font-size: 2.3em;
+    }
+    
+    .text-btns p {
+        font-size: 1em;
+    }
+
+    .btns a {
+        font-size: .89em;
+    }
+
+    .bubble-s {
+        left: 3em;
+        width: 4em;
+        height: 4em;
+    }
+
+    .bubble-m {
+        width: 5.5em;
+        height: 5.5em;
+    }
+
+    .bubble-l {
+        top: 1.4em;
+        right: 3em;
+        width: 7em;
+        height: 7em;
+    }
+
+    .bubble-xl {
+        width: 8.1em;
+        height: 8.1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .text-btns {
+        align-items: center;
+    }
+
+    .text-btns p {
+        min-width: 28rem;
+    }
+
+    .rocket-illustration {
+        display: none;
+    }
+
+    .text-btns p,
+    .text-btns div {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-btns h1 {
+        font-size: 2.1em;
+        width: 25rem;
+    }
+ 
+    .text-btns p {
+        font-size: .9em;
+        min-width: 25rem;
+    }
+
+    .bubble-s {
+        left: 1.3em;
+        top: 2.4em;
+    }
+
+    .bubble-m {
+        display: none;
+    }
+
+    .bubble-l {
+        top: 1.6em;
+        right: 1em;
+        width: 6em;
+        height: 6em;
+    }
+
+    .bubble-xl {
+        left: 1.2em;
+        width: 6.5em;
+        height: 6.5em;
+    }
 }

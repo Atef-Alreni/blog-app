@@ -2,7 +2,7 @@ import '../../styles/homepage/InformationSection.css';
 
 function InformationSection() {
     return (
-        <div className="information-section-container">
+        <div className="information-section-container" id="learnmore">
             <div className="free">
                 <div></div>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 

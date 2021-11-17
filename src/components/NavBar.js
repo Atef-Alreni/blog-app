@@ -1,20 +1,18 @@
+import { Link } from 'react-router-dom';
 import '../styles/NavBar.css';
 
 function NavBar() {
     return (
-        <nav>
+        <nav className="nav">
             <h1 className="logo">BlogApp</h1>
             <div className="right-nav-cont">
-                <ul>
-                    <li className="list-items">
-                        <a href="#">Home</a>
-                        <a href="#">Discover</a>
-                        <a href="#">Login</a>
-                        <a href="#">Signup</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                <div className="list-items">
+                    <Link to="/">Home</Link>    
+                    <Link to="/discover">Discover</Link>
+                    <Link to="/posts">Posts</Link>
+                    <Link to="/signup">Signup</Link>
+                    <Link to="/login">Login</Link>
+                </div>
                 <div className="line-container">
                     <div className="line half-line"></div>
                     <div className="line"></div>

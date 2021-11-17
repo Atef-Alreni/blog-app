@@ -1,0 +1,5 @@
+<svg id="location" xmlns="http://www.w3.org/2000/svg" width="199.877" height="213.549" viewBox="0 0 199.877 213.549">
+  <path id="Polygon_1" data-name="Polygon 1" d="M99.938,0l99.938,107.149H0Z" transform="translate(0)" fill="#1d84c7"/>
+  <path id="Path_311" data-name="Path 311" d="M99.938,0l99.938,107.149H0Z" transform="translate(199.877 213.549) rotate(180)" fill="#1d84c7"/>
+  <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M37.932,3C21.107,3,7.5,12.034,7.5,23.2c0,15.153,30.432,37.522,30.432,37.522S68.363,38.357,68.363,23.2C68.363,12.034,54.756,3,37.932,3Zm0,27.42c-6,0-10.868-3.233-10.868-7.216s4.869-7.216,10.868-7.216S48.8,19.221,48.8,23.2,43.931,30.42,37.932,30.42Z" transform="translate(62.264 76.911)" fill="#fff"/>
+</svg>

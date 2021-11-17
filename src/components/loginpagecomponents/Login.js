@@ -1,9 +1,9 @@
 import '../../styles/loginpage/Login.css';
+import SideNav from '../SideNav';
 
 function Login() {
-
     return (
-        <div className="login-container">
+        <div className="content-sidenav login-custom">
             <form action="" method="get" className="login-form">
                 <h1>Come Back</h1>
                 <div className="form-components">
@@ -22,14 +22,9 @@ function Login() {
                 </div>
                 <span className="signup-text">Dont have an account? <a href="">Sign up</a></span>
             </form>
-            <div className="sidenav">
-                <a href="">Announcements</a>
-                <a href="">News</a>
-                <a href="">About us</a>
-                <a href="">Contact us</a>
-            </div>
+            <SideNav />
         </div>
-    )
+    );
 }
 
 export default Login;

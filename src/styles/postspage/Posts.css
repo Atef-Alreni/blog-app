@@ -1,0 +1,128 @@
+.posts-custom {
+  width: clamp(21rem, 80vw, 65rem);
+  margin: 3rem auto 10rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts > * + * {
+  margin-top: 3rem;
+}
+
+.post-container {
+  width: clamp(21rem, 90%, 47rem);
+  min-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+/* Name, Date & Follow */
+
+.name-date-follow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.9rem;
+}
+
+.name-date-follow::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.301);
+}
+
+.name-date {
+  display: flex;
+}
+
+.name-date span {
+  font-size: 0.8em;
+  align-self: flex-end;
+  color: #1f62ff;
+  margin-left: 0.9rem;
+}
+
+.follow {
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 0.72em;
+  color: #515151;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Avatar,Title, & Text */
+.avatar-title-text {
+  display: flex;
+}
+
+.avatar {
+  flex-basis: 100%;
+  width: clamp(3rem, 30%, 5rem);
+  min-width: 4rem;
+  height: 5rem;
+  background-image: url(../../images/Girl-avatar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.6rem;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 0.8em;
+  margin-top: 0.7rem;
+}
+
+.title-text a {
+  align-self: flex-end;
+  display: flex;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.title-text a::after {
+  content: "";
+  align-self: center;
+  width: 2rem;
+  height: .9rem;
+  background-image: url(../../images/Icon\ awesome-arrow-right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0.24rem;
+}
+
+/* Hover & focus */
+.follow:hover,
+.follow:focus,
+.title-text a:hover,
+.title-text a:focus {
+  opacity: 0.7;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .title-text a {
+        display: none;
+    }
+
+    .posts {
+        align-items: center;
+    }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+  
+}

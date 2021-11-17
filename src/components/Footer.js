@@ -1,4 +1,5 @@
 import '../styles/Footer.css'
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -13,14 +14,14 @@ function Footer() {
                     <h3>Sitemap</h3>
                     <div className="sitemap-info">
                         <div className="hover mg-t">
-                            <span>Home</span>
-                            <span>Discover</span>
-                            <span>Sing up</span>
+                            <Link to="/">Home</Link>
+                            <Link to="/discover">Discover</Link>
+                            <Link to="/signup">Sign up</Link>
                         </div>
                         <div className="hover mg-t">
-                            <span>Login</span>
-                            <span>About us</span>
-                            <span>Contact us</span>
+                            <Link to="/login">Login</Link>                            
+                            <Link to="/about">About us</Link>                            
+                            <Link to="/contact">Contact us</Link>                            
                         </div>
                     </div>
                 </div>
@@ -28,9 +29,9 @@ function Footer() {
                 <div className="about-us">
                     <h3>About us</h3>
                     <div className="hover mg-t">
-                        <span>Who we are</span>
-                        <span>Mission</span>
-                        <span>Vision</span>
+                        <a href="/about#whoweare">Who we are</a>
+                        <a href="/about#mission">Our mission</a>
+                        <a href="/about#vision">Vision</a>
                     </div>
                 </div>
                 <div className="get-in-touch">

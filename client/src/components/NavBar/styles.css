@@ -1,0 +1,99 @@
+.nav {
+  background: #1d84c7;
+  padding-block: 1.5rem;
+}
+
+.logo {
+  color: white;
+}
+
+.right-nav-container {
+  display: flex;
+}
+
+.login-nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  border-radius: 50%;
+}
+
+.user-avatar > * {
+  font-size: 1rem !important;
+}
+
+.user-name {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-inline: 1rem 2rem;
+}
+
+.logout-btn {
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: max-content;
+  color: white;
+  background: rgb(246, 68, 68);
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in-out;
+  padding: 0.6rem 1.25rem;
+}
+
+.list-items {
+  width: clamp(17em, 35vw, 20em);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.list-items > a {
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.list-items > a + a {
+  margin-left: 1rem;
+}
+
+.line-container {
+  display: none;
+}
+
+/* Hover & focus */
+.list-items a:hover,
+.list-items a:focus {
+  opacity: 0.7;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+  opacity: 0.9;
+}
+
+.burger-nav {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .list-items {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .user-name {
+    display: none;
+  }
+
+  .user-avatar {
+    margin-right: 1rem;
+  }
+}
